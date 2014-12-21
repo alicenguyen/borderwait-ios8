@@ -7,14 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		972914421A465A8C001CD2B2 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972914411A465A8C001CD2B2 /* GoogleMaps.framework */; };
+		972914441A465A98001CD2B2 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 972914431A465A98001CD2B2 /* GoogleMaps.bundle */; };
+		972914451A465DBD001CD2B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97DD646E1A416EB2004E3EDC /* Main.storyboard */; };
+		972914461A465DD2001CD2B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DD64731A416EB2004E3EDC /* LaunchScreen.xib */; };
+		972914471A465DF7001CD2B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DD64731A416EB2004E3EDC /* LaunchScreen.xib */; };
+		972914481A465DFB001CD2B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97DD646E1A416EB2004E3EDC /* Main.storyboard */; };
+		972914551A467655001CD2B2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972914541A467655001CD2B2 /* MapKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		972914611A46A0D9001CD2B2 /* PortLocationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972914601A46A0D9001CD2B2 /* PortLocationTableViewController.m */; };
+		972914671A46AA7F001CD2B2 /* PortMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972914661A46AA7F001CD2B2 /* PortMapViewController.m */; };
+		9729146E1A46B75C001CD2B2 /* Port.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729146D1A46B75C001CD2B2 /* Port.m */; };
+		972914711A46D25A001CD2B2 /* PortViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 972914701A46D25A001CD2B2 /* PortViewCell.m */; };
+		972914741A47587C001CD2B2 /* PortData.m in Sources */ = {isa = PBXBuildFile; fileRef = 972914731A47587C001CD2B2 /* PortData.m */; };
 		97DD64641A416EB2004E3EDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD64631A416EB2004E3EDC /* main.m */; };
 		97DD64671A416EB2004E3EDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD64661A416EB2004E3EDC /* AppDelegate.m */; };
-		97DD646A1A416EB2004E3EDC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD64691A416EB2004E3EDC /* MasterViewController.m */; };
-		97DD646D1A416EB2004E3EDC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD646C1A416EB2004E3EDC /* DetailViewController.m */; };
-		97DD64701A416EB2004E3EDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97DD646E1A416EB2004E3EDC /* Main.storyboard */; };
 		97DD64721A416EB2004E3EDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97DD64711A416EB2004E3EDC /* Images.xcassets */; };
-		97DD64751A416EB2004E3EDC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DD64731A416EB2004E3EDC /* LaunchScreen.xib */; };
 		97DD64811A416EB2004E3EDC /* Borderwait2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD64801A416EB2004E3EDC /* Borderwait2Tests.m */; };
+		97DD648C1A416EFA004E3EDC /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD648B1A416EFA004E3EDC /* Crashlytics.framework */; };
+		97DD65BB1A417214004E3EDC /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65B01A417214004E3EDC /* AVKit.framework */; };
+		97DD65BC1A417214004E3EDC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65B11A417214004E3EDC /* CoreData.framework */; };
+		97DD65BD1A417214004E3EDC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65B21A417214004E3EDC /* CoreLocation.framework */; };
+		97DD65BE1A417214004E3EDC /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65B31A417214004E3EDC /* CoreText.framework */; };
+		97DD65BF1A417214004E3EDC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65B41A417214004E3EDC /* GLKit.framework */; };
+		97DD65C01A417214004E3EDC /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65B51A417214004E3EDC /* ImageIO.framework */; };
+		97DD65C11A417214004E3EDC /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65B61A417214004E3EDC /* libc++.dylib */; };
+		97DD65C21A417214004E3EDC /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65B71A417214004E3EDC /* libicucore.dylib */; };
+		97DD65C31A417214004E3EDC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65B81A417214004E3EDC /* OpenGLES.framework */; };
+		97DD65C41A417214004E3EDC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65B91A417214004E3EDC /* QuartzCore.framework */; };
+		97DD65C51A417214004E3EDC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65BA1A417214004E3EDC /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,21 +48,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		972914411A465A8C001CD2B2 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
+		972914431A465A98001CD2B2 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		972914541A467655001CD2B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9729145F1A46A0D9001CD2B2 /* PortLocationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PortLocationTableViewController.h; path = ../PortLocationTableViewController.h; sourceTree = "<group>"; };
+		972914601A46A0D9001CD2B2 /* PortLocationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PortLocationTableViewController.m; path = ../PortLocationTableViewController.m; sourceTree = "<group>"; };
+		972914651A46AA7F001CD2B2 /* PortMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PortMapViewController.h; path = ../PortMapViewController.h; sourceTree = "<group>"; };
+		972914661A46AA7F001CD2B2 /* PortMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PortMapViewController.m; path = ../PortMapViewController.m; sourceTree = "<group>"; };
+		9729146C1A46B75C001CD2B2 /* Port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Port.h; sourceTree = "<group>"; };
+		9729146D1A46B75C001CD2B2 /* Port.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Port.m; sourceTree = "<group>"; };
+		9729146F1A46D25A001CD2B2 /* PortViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortViewCell.h; sourceTree = "<group>"; };
+		972914701A46D25A001CD2B2 /* PortViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortViewCell.m; sourceTree = "<group>"; };
+		972914721A47587C001CD2B2 /* PortData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortData.h; sourceTree = "<group>"; };
+		972914731A47587C001CD2B2 /* PortData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortData.m; sourceTree = "<group>"; };
 		97DD645E1A416EB2004E3EDC /* Borderwait2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Borderwait2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DD64621A416EB2004E3EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97DD64631A416EB2004E3EDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		97DD64651A416EB2004E3EDC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		97DD64661A416EB2004E3EDC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		97DD64681A416EB2004E3EDC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		97DD64691A416EB2004E3EDC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		97DD646B1A416EB2004E3EDC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		97DD646C1A416EB2004E3EDC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		97DD646F1A416EB2004E3EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97DD64711A416EB2004E3EDC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		97DD64741A416EB2004E3EDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		97DD647A1A416EB2004E3EDC /* Borderwait2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Borderwait2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DD647F1A416EB2004E3EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97DD64801A416EB2004E3EDC /* Borderwait2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Borderwait2Tests.m; sourceTree = "<group>"; };
+		97DD648B1A416EFA004E3EDC /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		97DD65B01A417214004E3EDC /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		97DD65B11A417214004E3EDC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		97DD65B21A417214004E3EDC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		97DD65B31A417214004E3EDC /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		97DD65B41A417214004E3EDC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		97DD65B51A417214004E3EDC /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		97DD65B61A417214004E3EDC /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		97DD65B71A417214004E3EDC /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		97DD65B81A417214004E3EDC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		97DD65B91A417214004E3EDC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		97DD65BA1A417214004E3EDC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +91,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972914551A467655001CD2B2 /* MapKit.framework in Frameworks */,
+				97DD648C1A416EFA004E3EDC /* Crashlytics.framework in Frameworks */,
+				97DD65BB1A417214004E3EDC /* AVKit.framework in Frameworks */,
+				97DD65BC1A417214004E3EDC /* CoreData.framework in Frameworks */,
+				97DD65BD1A417214004E3EDC /* CoreLocation.framework in Frameworks */,
+				97DD65BE1A417214004E3EDC /* CoreText.framework in Frameworks */,
+				97DD65BF1A417214004E3EDC /* GLKit.framework in Frameworks */,
+				97DD65C01A417214004E3EDC /* ImageIO.framework in Frameworks */,
+				97DD65C11A417214004E3EDC /* libc++.dylib in Frameworks */,
+				97DD65C21A417214004E3EDC /* libicucore.dylib in Frameworks */,
+				972914421A465A8C001CD2B2 /* GoogleMaps.framework in Frameworks */,
+				97DD65C31A417214004E3EDC /* OpenGLES.framework in Frameworks */,
+				97DD65C41A417214004E3EDC /* QuartzCore.framework in Frameworks */,
+				97DD65C51A417214004E3EDC /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +118,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9729144C1A465E8E001CD2B2 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		972914751A475887001CD2B2 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9729146C1A46B75C001CD2B2 /* Port.h */,
+				972914721A47587C001CD2B2 /* PortData.h */,
+				972914731A47587C001CD2B2 /* PortData.m */,
+				9729146D1A46B75C001CD2B2 /* Port.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		97DD64551A416EB2004E3EDC = {
 			isa = PBXGroup;
 			children = (
+				97DD65C61A417290004E3EDC /* Frameworks */,
 				97DD64601A416EB2004E3EDC /* Borderwait2 */,
 				97DD647D1A416EB2004E3EDC /* Borderwait2Tests */,
 				97DD645F1A416EB2004E3EDC /* Products */,
@@ -84,16 +158,20 @@
 		97DD64601A416EB2004E3EDC /* Borderwait2 */ = {
 			isa = PBXGroup;
 			children = (
+				972914651A46AA7F001CD2B2 /* PortMapViewController.h */,
+				972914661A46AA7F001CD2B2 /* PortMapViewController.m */,
+				9729146F1A46D25A001CD2B2 /* PortViewCell.h */,
+				972914701A46D25A001CD2B2 /* PortViewCell.m */,
+				9729145F1A46A0D9001CD2B2 /* PortLocationTableViewController.h */,
+				972914601A46A0D9001CD2B2 /* PortLocationTableViewController.m */,
 				97DD64651A416EB2004E3EDC /* AppDelegate.h */,
 				97DD64661A416EB2004E3EDC /* AppDelegate.m */,
-				97DD64681A416EB2004E3EDC /* MasterViewController.h */,
-				97DD64691A416EB2004E3EDC /* MasterViewController.m */,
-				97DD646B1A416EB2004E3EDC /* DetailViewController.h */,
-				97DD646C1A416EB2004E3EDC /* DetailViewController.m */,
 				97DD646E1A416EB2004E3EDC /* Main.storyboard */,
 				97DD64711A416EB2004E3EDC /* Images.xcassets */,
 				97DD64731A416EB2004E3EDC /* LaunchScreen.xib */,
 				97DD64611A416EB2004E3EDC /* Supporting Files */,
+				9729144C1A465E8E001CD2B2 /* Maps */,
+				972914751A475887001CD2B2 /* Data */,
 			);
 			path = Borderwait2;
 			sourceTree = "<group>";
@@ -124,6 +202,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		97DD65C61A417290004E3EDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				972914541A467655001CD2B2 /* MapKit.framework */,
+				972914431A465A98001CD2B2 /* GoogleMaps.bundle */,
+				972914411A465A8C001CD2B2 /* GoogleMaps.framework */,
+				97DD648B1A416EFA004E3EDC /* Crashlytics.framework */,
+				97DD65B01A417214004E3EDC /* AVKit.framework */,
+				97DD65B11A417214004E3EDC /* CoreData.framework */,
+				97DD65B21A417214004E3EDC /* CoreLocation.framework */,
+				97DD65B31A417214004E3EDC /* CoreText.framework */,
+				97DD65B41A417214004E3EDC /* GLKit.framework */,
+				97DD65B51A417214004E3EDC /* ImageIO.framework */,
+				97DD65B61A417214004E3EDC /* libc++.dylib */,
+				97DD65B71A417214004E3EDC /* libicucore.dylib */,
+				97DD65B81A417214004E3EDC /* OpenGLES.framework */,
+				97DD65B91A417214004E3EDC /* QuartzCore.framework */,
+				97DD65BA1A417214004E3EDC /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +234,7 @@
 				97DD645A1A416EB2004E3EDC /* Sources */,
 				97DD645B1A416EB2004E3EDC /* Frameworks */,
 				97DD645C1A416EB2004E3EDC /* Resources */,
+				97DD648A1A416EDF004E3EDC /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -173,6 +274,11 @@
 				TargetAttributes = {
 					97DD645D1A416EB2004E3EDC = {
 						CreatedOnToolsVersion = 6.0.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					97DD64791A416EB2004E3EDC = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -187,6 +293,39 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				ca,
+				cs,
+				da,
+				de,
+				el,
+				en_GB,
+				es,
+				fi,
+				fr,
+				he,
+				hr,
+				hu,
+				id,
+				it,
+				ja,
+				ko,
+				ms,
+				nl,
+				no,
+				pl,
+				pt,
+				pt_PT,
+				ro,
+				ru,
+				sk,
+				sv,
+				th,
+				tr,
+				uk,
+				vi,
+				zh_CN,
+				zh_TW,
 			);
 			mainGroup = 97DD64551A416EB2004E3EDC;
 			productRefGroup = 97DD645F1A416EB2004E3EDC /* Products */;
@@ -204,9 +343,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97DD64701A416EB2004E3EDC /* Main.storyboard in Resources */,
-				97DD64751A416EB2004E3EDC /* LaunchScreen.xib in Resources */,
+				972914461A465DD2001CD2B2 /* LaunchScreen.xib in Resources */,
+				972914451A465DBD001CD2B2 /* Main.storyboard in Resources */,
 				97DD64721A416EB2004E3EDC /* Images.xcassets in Resources */,
+				972914441A465A98001CD2B2 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,20 +354,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972914471A465DF7001CD2B2 /* LaunchScreen.xib in Resources */,
+				972914481A465DFB001CD2B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97DD648A1A416EDF004E3EDC /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run a1d6b2dbcd43ba0382f499ab73f3cd6424abf153 7152c5dfeb4a4900835412d92d990ed52df1e8a2681f46978984bdcc1bcd2bab";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		97DD645A1A416EB2004E3EDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9729146E1A46B75C001CD2B2 /* Port.m in Sources */,
+				972914671A46AA7F001CD2B2 /* PortMapViewController.m in Sources */,
 				97DD64671A416EB2004E3EDC /* AppDelegate.m in Sources */,
-				97DD646A1A416EB2004E3EDC /* MasterViewController.m in Sources */,
+				972914741A47587C001CD2B2 /* PortData.m in Sources */,
+				972914711A46D25A001CD2B2 /* PortViewCell.m in Sources */,
 				97DD64641A416EB2004E3EDC /* main.m in Sources */,
-				97DD646D1A416EB2004E3EDC /* DetailViewController.m in Sources */,
+				972914611A46A0D9001CD2B2 /* PortLocationTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,9 +465,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -338,8 +501,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -349,8 +513,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/alicenguyen/Downloads/GoogleMaps-iOS-1.9.1",
+					"/Users/alicenguyen/Downloads/GoogleMaps-iOS-1.9.1/GoogleMapsSDKDemos",
+					"$(PROJECT_DIR)/GoogleMaps-iOS-1.9.1",
+					"$(PROJECT_DIR)/GoogleMaps-iOS-1.9.1/GoogleMapsSDKDemos",
+				);
 				INFOPLIST_FILE = Borderwait2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,8 +533,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"/Users/alicenguyen/Downloads/GoogleMaps-iOS-1.9.1",
+					"/Users/alicenguyen/Downloads/GoogleMaps-iOS-1.9.1/GoogleMapsSDKDemos",
+					"$(PROJECT_DIR)/GoogleMaps-iOS-1.9.1",
+					"$(PROJECT_DIR)/GoogleMaps-iOS-1.9.1/GoogleMapsSDKDemos",
+				);
 				INFOPLIST_FILE = Borderwait2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -418,6 +602,7 @@
 				97DD64861A416EB2004E3EDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		97DD64871A416EB2004E3EDC /* Build configuration list for PBXNativeTarget "Borderwait2Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +611,7 @@
 				97DD64891A416EB2004E3EDC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

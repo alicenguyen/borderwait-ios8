@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "DetailViewController.h"
+#import <Crashlytics/Crashlytics.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 @interface AppDelegate ()
 
@@ -17,7 +18,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [Crashlytics startWithAPIKey:@"a1d6b2dbcd43ba0382f499ab73f3cd6424abf153"];
+    [GMSServices provideAPIKey:@"AIzaSyCjJ9JE0TpdVgoFkhfYUvFBGxfj9ciQyzI"];
     return YES;
 }
 
