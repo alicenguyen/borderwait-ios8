@@ -36,7 +36,7 @@
     self.openLanesCount = _numLanes;
     self.userReport = _usrReport;
     self.lastUpdate = _update;
-    
+    self.coordinate = CLLocationCoordinate2DMake(self.latitude, self.longitude);
     
     return self;
 }

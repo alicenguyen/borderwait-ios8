@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		972914421A465A8C001CD2B2 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972914411A465A8C001CD2B2 /* GoogleMaps.framework */; };
-		972914441A465A98001CD2B2 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 972914431A465A98001CD2B2 /* GoogleMaps.bundle */; };
 		972914451A465DBD001CD2B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97DD646E1A416EB2004E3EDC /* Main.storyboard */; };
 		972914461A465DD2001CD2B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DD64731A416EB2004E3EDC /* LaunchScreen.xib */; };
 		972914471A465DF7001CD2B2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97DD64731A416EB2004E3EDC /* LaunchScreen.xib */; };
@@ -17,8 +15,8 @@
 		9729146E1A46B75C001CD2B2 /* Port.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729146D1A46B75C001CD2B2 /* Port.m */; };
 		972914711A46D25A001CD2B2 /* PortViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 972914701A46D25A001CD2B2 /* PortViewCell.m */; };
 		972914741A47587C001CD2B2 /* PortData.m in Sources */ = {isa = PBXBuildFile; fileRef = 972914731A47587C001CD2B2 /* PortData.m */; };
-		9729147D1A477832001CD2B2 /* PortLocationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729147A1A477832001CD2B2 /* PortLocationTableViewController.m */; };
 		9729147E1A477832001CD2B2 /* PortMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729147C1A477832001CD2B2 /* PortMapViewController.m */; };
+		972914851A47A86A001CD2B2 /* BWColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 972914841A47A86A001CD2B2 /* BWColor.m */; };
 		97DD64641A416EB2004E3EDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD64631A416EB2004E3EDC /* main.m */; };
 		97DD64671A416EB2004E3EDC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD64661A416EB2004E3EDC /* AppDelegate.m */; };
 		97DD64721A416EB2004E3EDC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97DD64711A416EB2004E3EDC /* Images.xcassets */; };
@@ -48,8 +46,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		972914411A465A8C001CD2B2 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
-		972914431A465A98001CD2B2 /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
 		972914541A467655001CD2B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9729146C1A46B75C001CD2B2 /* Port.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Port.h; sourceTree = "<group>"; };
 		9729146D1A46B75C001CD2B2 /* Port.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Port.m; sourceTree = "<group>"; };
@@ -57,10 +53,10 @@
 		972914701A46D25A001CD2B2 /* PortViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortViewCell.m; sourceTree = "<group>"; };
 		972914721A47587C001CD2B2 /* PortData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortData.h; sourceTree = "<group>"; };
 		972914731A47587C001CD2B2 /* PortData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortData.m; sourceTree = "<group>"; };
-		972914791A477832001CD2B2 /* PortLocationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortLocationTableViewController.h; sourceTree = "<group>"; };
-		9729147A1A477832001CD2B2 /* PortLocationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortLocationTableViewController.m; sourceTree = "<group>"; };
 		9729147B1A477832001CD2B2 /* PortMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortMapViewController.h; sourceTree = "<group>"; };
 		9729147C1A477832001CD2B2 /* PortMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortMapViewController.m; sourceTree = "<group>"; };
+		972914831A47A86A001CD2B2 /* BWColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWColor.h; path = Borderwait2/BWColor.h; sourceTree = "<group>"; };
+		972914841A47A86A001CD2B2 /* BWColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWColor.m; path = Borderwait2/BWColor.m; sourceTree = "<group>"; };
 		97DD645E1A416EB2004E3EDC /* Borderwait2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Borderwait2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DD64621A416EB2004E3EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97DD64631A416EB2004E3EDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -101,7 +97,6 @@
 				97DD65C01A417214004E3EDC /* ImageIO.framework in Frameworks */,
 				97DD65C11A417214004E3EDC /* libc++.dylib in Frameworks */,
 				97DD65C21A417214004E3EDC /* libicucore.dylib in Frameworks */,
-				972914421A465A8C001CD2B2 /* GoogleMaps.framework in Frameworks */,
 				97DD65C31A417214004E3EDC /* OpenGLES.framework in Frameworks */,
 				97DD65C41A417214004E3EDC /* QuartzCore.framework in Frameworks */,
 				97DD65C51A417214004E3EDC /* SystemConfiguration.framework in Frameworks */,
@@ -139,6 +134,8 @@
 		97DD64551A416EB2004E3EDC = {
 			isa = PBXGroup;
 			children = (
+				972914831A47A86A001CD2B2 /* BWColor.h */,
+				972914841A47A86A001CD2B2 /* BWColor.m */,
 				97DD65C61A417290004E3EDC /* Frameworks */,
 				97DD64601A416EB2004E3EDC /* Borderwait2 */,
 				97DD647D1A416EB2004E3EDC /* Borderwait2Tests */,
@@ -158,8 +155,6 @@
 		97DD64601A416EB2004E3EDC /* Borderwait2 */ = {
 			isa = PBXGroup;
 			children = (
-				972914791A477832001CD2B2 /* PortLocationTableViewController.h */,
-				9729147A1A477832001CD2B2 /* PortLocationTableViewController.m */,
 				9729147B1A477832001CD2B2 /* PortMapViewController.h */,
 				9729147C1A477832001CD2B2 /* PortMapViewController.m */,
 				9729146F1A46D25A001CD2B2 /* PortViewCell.h */,
@@ -206,8 +201,6 @@
 			isa = PBXGroup;
 			children = (
 				972914541A467655001CD2B2 /* MapKit.framework */,
-				972914431A465A98001CD2B2 /* GoogleMaps.bundle */,
-				972914411A465A8C001CD2B2 /* GoogleMaps.framework */,
 				97DD648B1A416EFA004E3EDC /* Crashlytics.framework */,
 				97DD65B01A417214004E3EDC /* AVKit.framework */,
 				97DD65B11A417214004E3EDC /* CoreData.framework */,
@@ -346,7 +339,6 @@
 				972914461A465DD2001CD2B2 /* LaunchScreen.xib in Resources */,
 				972914451A465DBD001CD2B2 /* Main.storyboard in Resources */,
 				97DD64721A416EB2004E3EDC /* Images.xcassets in Resources */,
-				972914441A465A98001CD2B2 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,8 +377,8 @@
 			files = (
 				9729146E1A46B75C001CD2B2 /* Port.m in Sources */,
 				97DD64671A416EB2004E3EDC /* AppDelegate.m in Sources */,
-				9729147D1A477832001CD2B2 /* PortLocationTableViewController.m in Sources */,
 				9729147E1A477832001CD2B2 /* PortMapViewController.m in Sources */,
+				972914851A47A86A001CD2B2 /* BWColor.m in Sources */,
 				972914741A47587C001CD2B2 /* PortData.m in Sources */,
 				972914711A46D25A001CD2B2 /* PortViewCell.m in Sources */,
 				97DD64641A416EB2004E3EDC /* main.m in Sources */,

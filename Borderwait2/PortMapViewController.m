@@ -8,6 +8,8 @@
 
 #import "PortMapViewController.h"
 #import "Port.h"
+#import "PortViewCell.h"
+#import "BWColor.h"
 
 @implementation PortMapViewController
 @synthesize mapView;
@@ -25,9 +27,12 @@
     if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
         [self.locationManager requestWhenInUseAuthorization];
     }
-   
+    
     self.portData = [[PortData alloc] init];
     
+    self.portNames = [self.portData getPortNames];
+    
+    self.color = [[BWColor alloc] init];
 }
 
 // Location Manager Delegate Methods
@@ -57,7 +62,41 @@
         [self.mapView addAnnotation:point];
         
     }
-    
-    
 }
+
+-(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    PortViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PortCell"];
+   
+    cell.setStyle;
+    
+    NSString *portKey = [self.portNames objectAtIndex:indexPath.row];
+    Port *port = [[self.portData getPortDetail:portKey]objectAtIndex:0];
+
+    NSString *currentWait = port.currentWait;
+    NSString *averageWait = port.averageWait;
+    NSString *userReport = port.userReport;
+    CLLocationCoordinate2D location = port.coordinate;
+    
+    double distance = port.distance;
+    double laneCount = port.openLanesCount;
+//
+    cell.portNameLabel.text = portKey;
+//    cell.distanceLabel.text = [NSString stringWithFormat: @"%@ mi", @(distance).stringValue];
+//    
+    
+    return cell;
+}
+
+-(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.portNames count];
+}
+
 @end

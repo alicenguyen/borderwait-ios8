@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BWColor.h"
 
 @interface PortViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *portNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (nonatomic) BWColor *color;
+@property (weak, nonatomic) IBOutletCollection(UILabel) NSArray *fieldLabels;
 
+-(void) setStyle;
 @end

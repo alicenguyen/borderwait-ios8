@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
 @interface Port : NSObject
 
@@ -21,6 +22,7 @@
 @property (nonatomic) double latitude;
 @property (nonatomic) double distance;
 @property (nonatomic) double openLanesCount;
+@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
 
 - (id) initWithName: (NSString*) name
           portType: (NSString*) _type

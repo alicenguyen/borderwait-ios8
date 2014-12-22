@@ -10,4 +10,18 @@
 
 @implementation PortViewCell
 
+- (void) setStyle
+{
+    self.color = [[BWColor alloc] init];
+    
+    self.distanceLabel.textColor = self.color.gray300;
+    
+    for (UILabel *label in self.fieldLabels)
+    {
+        label.textColor = self.color.gray300;
+    }
+    
+}
+
+
 @end
