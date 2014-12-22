@@ -14,6 +14,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
 @property (nonatomic) BWColor *color;
 @property (weak, nonatomic) IBOutletCollection(UILabel) NSArray *fieldLabels;
+@property (weak, nonatomic) IBOutlet UILabel *currentWaitLabel;
+@property (weak, nonatomic) IBOutlet UILabel *averageWaitLabel;
+@property (weak, nonatomic) IBOutlet UILabel *userReportLabel;
 
 -(void) setStyle;
 @end

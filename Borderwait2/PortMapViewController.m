@@ -74,17 +74,16 @@
     NSString *portKey = [self.portNames objectAtIndex:indexPath.row];
     Port *port = [[self.portData getPortDetail:portKey]objectAtIndex:0];
 
-    NSString *currentWait = port.currentWait;
-    NSString *averageWait = port.averageWait;
-    NSString *userReport = port.userReport;
     CLLocationCoordinate2D location = port.coordinate;
     
     double distance = port.distance;
     double laneCount = port.openLanesCount;
-//
+    
     cell.portNameLabel.text = portKey;
-//    cell.distanceLabel.text = [NSString stringWithFormat: @"%@ mi", @(distance).stringValue];
-//    
+    cell.currentWaitLabel.text = port.currentWait;
+    cell.averageWaitLabel.text = port.averageWait;
+    cell.userReportLabel.text = port.userReport;
+    
     
     return cell;
 }
