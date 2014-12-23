@@ -7,6 +7,7 @@
 //
 
 #import "PortViewCell.h"
+#import "BWStyleKit.h"
 
 @implementation PortViewCell
 
@@ -22,6 +23,10 @@
     }
     
 }
+-(void) drawDot
+{
+}
+    
 
 
 @end

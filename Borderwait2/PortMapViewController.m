@@ -10,6 +10,7 @@
 #import "Port.h"
 #import "PortViewCell.h"
 #import "BWColor.h"
+#import "BWStyleKit.h"
 
 @implementation PortMapViewController
 @synthesize mapView;
@@ -68,18 +69,26 @@
 {
     
     PortViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PortCell"];
-   
-    cell.setStyle;
+    [cell setStyle];
+    [cell drawDot];
     
     NSString *portKey = [self.portNames objectAtIndex:indexPath.row];
     Port *port = [[self.portData getPortDetail:portKey]objectAtIndex:0];
 
-    CLLocationCoordinate2D location = port.coordinate;
-    
-    double distance = port.distance;
-    double laneCount = port.openLanesCount;
+//    CLLocationCoordinate2D location = port.coordinate;
+//    double distance = port.distance;
+//    double laneCount = port.openLanesCount;
     
     cell.portNameLabel.text = portKey;
+    int index = indexPath.row;
+    switch(index){
+            case 0: cell.portNameLabel.textColor = BWStyleKit.green500;
+            break;
+            case 1: cell.portNameLabel.textColor = BWStyleKit.amber500;
+            break;
+            case 2: cell.portNameLabel.textColor = BWStyleKit.red500;
+            break;
+    }
     cell.currentWaitLabel.text = port.currentWait;
     cell.averageWaitLabel.text = port.averageWait;
     cell.userReportLabel.text = port.userReport;
