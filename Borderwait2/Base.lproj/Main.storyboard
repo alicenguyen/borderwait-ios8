@@ -93,7 +93,8 @@
                                                             <exclude reference="b2X-st-caO"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular">
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="-598" y="21" width="12" height="25"/>
                                                         <mask key="constraints">
                                                             <include reference="b2X-st-caO"/>
                                                         </mask>
@@ -112,7 +113,8 @@
                                                             <exclude reference="9ul-7d-mtR"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular">
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="-322" y="15" width="82" height="21"/>
                                                         <mask key="constraints">
                                                             <include reference="9ul-7d-mtR"/>
                                                         </mask>
@@ -265,7 +267,8 @@
                                                             <exclude reference="2IP-lE-97K"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular">
+                                                    <variation key="heightClass=regular" misplaced="YES">
+                                                        <rect key="frame" x="-580" y="21" width="23" height="14"/>
                                                         <mask key="constraints">
                                                             <exclude reference="2IP-lE-97K"/>
                                                         </mask>
@@ -441,6 +444,7 @@
                                             <outletCollection property="fieldLabels" destination="Urc-Mb-Bs9" id="xY9-3Y-Wgp"/>
                                             <outletCollection property="fieldLabels" destination="2iU-Fs-TxZ" id="fqo-Gh-mQ9"/>
                                             <outletCollection property="fieldLabels" destination="dYO-U7-icG" id="Eeo-fl-jqZ"/>
+                                            <segue destination="tsF-jS-ojh" kind="show" id="5wn-xk-F0M"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -516,7 +520,124 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szX-4Q-OZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="1dB-a2-FzD" customClass="BWStyleKit"/>
             </objects>
-            <point key="canvasLocation" x="1267" y="-15.75"/>
+            <point key="canvasLocation" x="1783" y="-654.75"/>
+        </scene>
+        <!--Port Detail View Controller-->
+        <scene sceneID="awy-Oh-saG">
+            <objects>
+                <viewController id="tsF-jS-ojh" customClass="PortDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sc2-f0-Cz0"/>
+                        <viewControllerLayoutGuide type="bottom" id="YwV-R6-SVU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ffW-wZ-N00">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="n5d-kW-k8J">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="i5x-Jk-tGD"/>
+                                </items>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                </variation>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUW-Zj-HOj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <userGuides>
+                                    <userLayoutGuide location="16" affinity="minX"/>
+                                </userGuides>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="40 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJo-a7-NDH">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                        <color key="textColor" red="0.84313725490196079" green="0.25490196078431371" blue="0.22352941176470589" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="16" y="98" width="123" height="43"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="current wait time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8n-9o-h34">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="27" y="132" width="123" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="49 min" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQP-1a-cM4">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                        <color key="textColor" red="0.84313725490000002" green="0.25490196079999999" blue="0.22352941179999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="16" y="161" width="123" height="43"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user report time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGb-ed-77Q">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="27" y="195" width="123" height="21"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="San Ysidro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUQ-vX-UGj">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="33"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="16" y="25" width="490" height="65"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10196078431372549" green="0.10980392156862745" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="IJo-a7-NDH"/>
+                                        <exclude reference="G8n-9o-h34"/>
+                                        <exclude reference="TQP-1a-cM4"/>
+                                        <exclude reference="ZGb-ed-77Q"/>
+                                        <exclude reference="QUQ-vX-UGj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="57" width="600" height="800"/>
+                                    <mask key="subviews">
+                                        <include reference="IJo-a7-NDH"/>
+                                        <include reference="G8n-9o-h34"/>
+                                        <include reference="TQP-1a-cM4"/>
+                                        <include reference="ZGb-ed-77Q"/>
+                                        <include reference="QUQ-vX-UGj"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="n5d-kW-k8J"/>
+                                <exclude reference="vUW-Zj-HOj"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="subviews">
+                                <include reference="n5d-kW-k8J"/>
+                                <include reference="vUW-Zj-HOj"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="portNameLabel" destination="QUQ-vX-UGj" id="2az-s0-TjT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BKo-ks-Ezn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2628" y="-971.25"/>
         </scene>
         <!--Border Ports-->
         <scene sceneID="EJg-ab-fU6">
