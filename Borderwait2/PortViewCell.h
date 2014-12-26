@@ -20,6 +20,8 @@
 @property (weak, nonatomic) IBOutlet UIView *dotView;
 @property (weak, nonatomic) IBOutlet UIView *statusDotView;
 @property (nonatomic) BWColor *color;
+@property (weak, nonatomic) IBOutlet UILabel *laneTypeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *openLanesLabel;
 
 -(void) setStyle;
 -(void) drawDot;

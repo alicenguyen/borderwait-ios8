@@ -67,7 +67,6 @@
 
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     PortViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PortCell"];
     [cell setStyle];
     [cell drawDot];
@@ -82,11 +81,20 @@
     cell.portNameLabel.text = portKey;
     int index = indexPath.row;
     switch(index){
-            case 0: cell.portNameLabel.textColor = BWStyleKit.green500;
+            case 0:
+            cell.currentWaitLabel.textColor = BWStyleKit.green500;
+            cell.averageWaitLabel.textColor = BWStyleKit.green500;
+            cell.userReportLabel.textColor = BWStyleKit.green500;
             break;
-            case 1: cell.portNameLabel.textColor = BWStyleKit.amber500;
+            case 1:
+            cell.currentWaitLabel.textColor = BWStyleKit.amber500;
+            cell.averageWaitLabel.textColor = BWStyleKit.amber500;
+            cell.userReportLabel.textColor = BWStyleKit.amber500;
             break;
-            case 2: cell.portNameLabel.textColor = BWStyleKit.red500;
+            case 2: 
+            cell.currentWaitLabel.textColor = BWStyleKit.red500;
+            cell.averageWaitLabel.textColor = BWStyleKit.red500;
+            cell.userReportLabel.textColor = BWStyleKit.red500;
             break;
     }
     cell.currentWaitLabel.text = port.currentWait;
