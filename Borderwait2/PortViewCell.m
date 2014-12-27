@@ -17,10 +17,6 @@
     
     self.distanceLabel.textColor = self.color.gray300;
     
-    for (UILabel *label in self.fieldLabels)
-    {
-        label.textColor = self.color.gray300;
-    }
     
 }
 -(void) drawDot

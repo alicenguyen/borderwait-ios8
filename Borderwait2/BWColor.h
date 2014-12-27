@@ -22,4 +22,6 @@
 
 @property (nonatomic) UIColor *black;
 @property (nonatomic) UIColor *darkBackground;
+
+@property (nonatomic) UIColor *warningRed;
 @end

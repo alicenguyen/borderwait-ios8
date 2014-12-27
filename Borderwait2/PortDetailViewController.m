@@ -2,7 +2,7 @@
 //  PortDetailViewController.m
 //  Borderwait2
 //
-//  Created by Alice Nguyen on 12/22/14.
+//  Created by Alice Nguyen on 12/26/14.
 //  Copyright (c) 2014 Calit2. All rights reserved.
 //
 
@@ -17,12 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 /*
 #pragma mark - Navigation
