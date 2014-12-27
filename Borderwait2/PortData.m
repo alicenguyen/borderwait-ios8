@@ -25,10 +25,10 @@
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"1h 25min"
-                                      currentWait:@"1h 14min"
+                                      lanesOpen:@"1h25m"
+                                      currentWait:@"1h14m"
                                         averageWait:11
-                                     userReported:@"1h 3min"
+                                     userReported:@"1h3m"
                                        lastUpdate:@"At Noon PST"],
                         
                        [[Port alloc] initWithName:@"San Ysidro"
@@ -37,10 +37,10 @@
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"30 min"
-                                      currentWait:@"20 min"
+                                      lanesOpen:@"30m"
+                                      currentWait:@"20m"
                                         averageWait:11
-                                     userReported:@"23 min"
+                                     userReported:@"23m"
                                        lastUpdate:@"At Noon PST"],
                         
                        [[Port alloc] initWithName:@"San Ysidro"
@@ -49,10 +49,10 @@
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"50 min"
-                                      currentWait:@"51min"
+                                      lanesOpen:@"50m"
+                                      currentWait:@"51m"
                                         averageWait:7
-                                     userReported:@"1h 20min"
+                                     userReported:@"1h20m"
                                        lastUpdate:@"At Noon PST"], nil
                         
                         ];
@@ -63,10 +63,10 @@
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"1h 25min"
-                                      currentWait:@"1h 14min"
+                                      lanesOpen:@"1h25m"
+                                      currentWait:@"1h14m"
                                         averageWait:11
-                                     userReported:@"1h 3min"
+                                     userReported:@"1h3m"
                                        lastUpdate:@"At Noon PST"],
                        
                        [[Port alloc] initWithName:@"OtayMesa"
@@ -75,10 +75,10 @@
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"30 min"
-                                      currentWait:@"20 min"
+                                      lanesOpen:@"30m"
+                                      currentWait:@"20m"
                                         averageWait:11
-                                     userReported:@"23 min"
+                                     userReported:@"23m"
                                        lastUpdate:@"At Noon PST"],
                        
                        [[Port alloc] initWithName:@"OtayMesa"
@@ -87,10 +87,10 @@
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"50 min"
-                                      currentWait:@"51min"
+                                      lanesOpen:@"50m"
+                                      currentWait:@"51m"
                                         averageWait:7
-                                     userReported:@"1h 20min"
+                                     userReported:@"1h 20m"
                                        lastUpdate:@"At Noon PST"], nil
                        
                        ];
@@ -101,10 +101,10 @@
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"1h 25min"
-                                      currentWait:@"1h 14min"
+                                      lanesOpen:@"1h25m"
+                                      currentWait:@"1h14m"
                                         averageWait:11
-                                     userReported:@"1h 3min"
+                                     userReported:@"1h3m"
                                        lastUpdate:@"At Noon PST"],
                        
                        [[Port alloc] initWithName:@"Calexico/Mexicali"
@@ -113,10 +113,10 @@
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"30 min"
-                                      currentWait:@"20 min"
+                                      lanesOpen:@"30m"
+                                      currentWait:@"20m"
                                         averageWait:11
-                                     userReported:@"23 min"
+                                     userReported:@"23m"
                                        lastUpdate:@"At Noon PST"],
                        
                        [[Port alloc] initWithName:@"Calexico/Mexicali"
@@ -125,10 +125,10 @@
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"50 min"
-                                      currentWait:@"51min"
+                                      lanesOpen:@"50m"
+                                      currentWait:@"51m"
                                         averageWait:7
-                                     userReported:@"1h 20min"
+                                     userReported:@"1h20m"
                                        lastUpdate:@"At Noon PST"], nil
                        
                        ];
@@ -150,6 +150,17 @@
 - (NSArray*) getPortDetail:(NSString *)portName
 {
     return [self.ports objectForKey:portName];
+}
+
+-(NSInteger) getCount
+{
+    int count  = 0;
+    NSArray *ports = self.getPortNames;
+    for(int i = 0; i<[ports count]; i++ )
+    {
+        count += [[ports objectAtIndex:i ] count];
+    }
+    return count;
 }
 
 @end

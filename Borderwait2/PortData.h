@@ -15,5 +15,6 @@
 
 - (NSArray*) getPortNames;
 - (NSArray*) getPortDetail: (NSString*) portName;
+- (NSInteger) getCount;
 
 @end

@@ -71,14 +71,17 @@
     [cell setStyle];
     [cell drawDot];
     
-    NSString *portKey = [self.portNames objectAtIndex:indexPath.row];
-    Port *port = [[self.portData getPortDetail:portKey]objectAtIndex:0];
+    NSString *portKey = [self.portNames objectAtIndex:indexPath.section];
+    NSArray *portLanes = [self.portData getPortDetail:portKey];
+    Port *lane = [portLanes objectAtIndex:indexPath.row];
+    
+    
 
 //    CLLocationCoordinate2D location = port.coordinate;
 //    double distance = port.distance;
 //    double laneCount = port.openLanesCount;
     
-    cell.portNameLabel.text = portKey;
+    cell.portNameLabel.text = @"";
     int index = indexPath.row;
     switch(index){
             case 0:
@@ -97,22 +100,28 @@
             cell.userReportLabel.textColor = BWStyleKit.red500;
             break;
     }
-    cell.currentWaitLabel.text = port.currentWait;
-    cell.averageWaitLabel.text = port.averageWait;
-    cell.userReportLabel.text = port.userReport;
+    cell.currentWaitLabel.text = lane.currentWait;
+    cell.averageWaitLabel.text = lane.averageWait;
+    cell.userReportLabel.text = lane.userReport;
     
     
     return cell;
 }
-
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return [self.portNames count];
+}
+
+- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    return [self.portNames objectAtIndex:section];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.portNames count];
+    NSArray *portLanes = [self.portData getPortDetail:[self.portNames objectAtIndex:section]];
+    return [portLanes count];
 }
+
 
 @end
