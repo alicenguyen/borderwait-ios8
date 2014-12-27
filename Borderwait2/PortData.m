@@ -21,114 +21,114 @@
     NSArray *portSY = [NSArray arrayWithObjects:
                        [[Port alloc] initWithName:@"San Ysidro"
                                          portType:@"passenger"
-                                         laneType:@"standard"
+                                         laneType:@"Standard"
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"1h25m"
-                                      currentWait:@"1h14m"
-                                        averageWait:11
+                                      lanesOpen:16
+                                      currentWait:@"90m"
+                                        averageWait:@"30m"
                                      userReported:@"1h3m"
                                        lastUpdate:@"At Noon PST"],
                         
                        [[Port alloc] initWithName:@"San Ysidro"
                                          portType:@"passenger"
-                                         laneType:@"nexus/sentri"
+                                         laneType:@"Sentri"
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"30m"
-                                      currentWait:@"20m"
-                                        averageWait:11
-                                     userReported:@"23m"
+                                      lanesOpen:5
+                                      currentWait:@"60m"
+                                        averageWait:@"20m"
+                                     userReported:@"53m"
                                        lastUpdate:@"At Noon PST"],
                         
                        [[Port alloc] initWithName:@"San Ysidro"
                                          portType:@"passenger"
-                                         laneType:@"ready"
+                                         laneType:@"Ready"
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"50m"
-                                      currentWait:@"51m"
-                                        averageWait:7
-                                     userReported:@"1h20m"
+                                      lanesOpen:8
+                                      currentWait:@"25m"
+                                        averageWait:@"10m"
+                                     userReported:@"20m"
                                        lastUpdate:@"At Noon PST"], nil
                         
                         ];
     NSArray *portOM = [NSArray arrayWithObjects:
                        [[Port alloc] initWithName:@"OtayMesa"
                                          portType:@"passenger"
-                                         laneType:@"standard"
+                                         laneType:@"Standard"
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"1h25m"
-                                      currentWait:@"1h14m"
-                                        averageWait:11
+                                      lanesOpen:4
+                                      currentWait:@"1h10m"
+                                        averageWait:@"1h12m"
                                      userReported:@"1h3m"
                                        lastUpdate:@"At Noon PST"],
                        
                        [[Port alloc] initWithName:@"OtayMesa"
                                          portType:@"passenger"
-                                         laneType:@"nexus/sentri"
+                                         laneType:@"Sentri"
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"30m"
-                                      currentWait:@"20m"
-                                        averageWait:11
-                                     userReported:@"23m"
+                                      lanesOpen:6
+                                      currentWait:@"1h10m"
+                                      averageWait:@"1h05m"
+                                     userReported:@"1h10m"
                                        lastUpdate:@"At Noon PST"],
                        
                        [[Port alloc] initWithName:@"OtayMesa"
                                          portType:@"passenger"
-                                         laneType:@"ready"
+                                         laneType:@"Ready"
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"50m"
-                                      currentWait:@"51m"
-                                        averageWait:7
-                                     userReported:@"1h 20m"
+                                      lanesOpen:2
+                                      currentWait:@"10m"
+                                        averageWait:@"5m"
+                                     userReported:@"9m"
                                        lastUpdate:@"At Noon PST"], nil
                        
                        ];
     NSArray *portCM = [NSArray arrayWithObjects:
                        [[Port alloc] initWithName:@"Calexico/Mexicali"
                                          portType:@"passenger"
-                                         laneType:@"standard"
+                                         laneType:@"Standard"
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"1h25m"
-                                      currentWait:@"1h14m"
-                                        averageWait:11
+                                      lanesOpen:10
+                                      currentWait:@"1h10m"
+                                        averageWait:@"1h02m"
                                      userReported:@"1h3m"
                                        lastUpdate:@"At Noon PST"],
                        
                        [[Port alloc] initWithName:@"Calexico/Mexicali"
                                          portType:@"passenger"
-                                         laneType:@"nexus/sentri"
+                                         laneType:@"Sentri"
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"30m"
-                                      currentWait:@"20m"
-                                        averageWait:11
+                                      lanesOpen:4
+                                      currentWait:@"40m"
+                                        averageWait:@"30m"
                                      userReported:@"23m"
                                        lastUpdate:@"At Noon PST"],
                        
                        [[Port alloc] initWithName:@"Calexico/Mexicali"
                                          portType:@"passenger"
-                                         laneType:@"ready"
+                                         laneType:@"Ready"
                                         longitude:-117.0292374
                                          latitude:32.5421692
                                          distance:20
-                                      lanesOpen:@"50m"
-                                      currentWait:@"51m"
-                                        averageWait:7
-                                     userReported:@"1h20m"
+                                      lanesOpen:0
+                                      currentWait:@"closed"
+                                        averageWait:@"closed"
+                                     userReported:@"closed"
                                        lastUpdate:@"At Noon PST"], nil
                        
                        ];
@@ -151,7 +151,6 @@
 {
     return [self.ports objectForKey:portName];
 }
-
 -(NSInteger) getCount
 {
     int count  = 0;

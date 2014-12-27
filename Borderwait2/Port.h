@@ -30,9 +30,9 @@
          longitude: (double) _long
           latitude: (double) _lat
           distance: (double)_dist
-         lanesOpen: (NSString*) _currWait
+         lanesOpen: (double) _numLanes
        currentWait: (NSString*) _avgWait
-       averageWait: (double) _numLanes
+       averageWait: (NSString*) _avgWait
       userReported: (NSString*) _userReport
         lastUpdate: (NSString*) _lastUpdate;
 

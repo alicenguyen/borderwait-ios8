@@ -23,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="371" id="kw3-vK-SKT">
-                                        <variation key="heightClass=regular" constant="298"/>
+                                        <variation key="heightClass=regular" constant="291"/>
                                     </constraint>
                                 </constraints>
                                 <variation key="default">
@@ -405,7 +405,9 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="orS-cW-vhV" firstAttribute="top" secondItem="8Bn-Mq-HDh" secondAttribute="top" id="01x-6d-12O"/>
-                            <constraint firstItem="wUZ-gx-Vbt" firstAttribute="top" secondItem="orS-cW-vhV" secondAttribute="bottom" constant="8" symbolic="YES" id="9vk-Ad-URK"/>
+                            <constraint firstItem="wUZ-gx-Vbt" firstAttribute="top" secondItem="orS-cW-vhV" secondAttribute="bottom" constant="8" symbolic="YES" id="9vk-Ad-URK">
+                                <variation key="heightClass=regular" constant="-1"/>
+                            </constraint>
                             <constraint firstItem="orS-cW-vhV" firstAttribute="leading" secondItem="wUZ-gx-Vbt" secondAttribute="leading" id="OCe-49-F1H"/>
                             <constraint firstItem="orS-cW-vhV" firstAttribute="trailing" secondItem="wUZ-gx-Vbt" secondAttribute="trailing" id="U6T-NY-Tgw"/>
                             <constraint firstAttribute="trailing" secondItem="orS-cW-vhV" secondAttribute="trailing" id="nDd-Hp-hsj"/>

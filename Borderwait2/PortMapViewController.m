@@ -81,7 +81,6 @@
 //    double distance = port.distance;
 //    double laneCount = port.openLanesCount;
     
-    cell.portNameLabel.text = @"";
     int index = indexPath.row;
     switch(index){
             case 0:
@@ -103,6 +102,7 @@
     cell.currentWaitLabel.text = lane.currentWait;
     cell.averageWaitLabel.text = lane.averageWait;
     cell.userReportLabel.text = lane.userReport;
+    cell.laneTypeLabel.text = lane.laneType;
     
     
     return cell;
