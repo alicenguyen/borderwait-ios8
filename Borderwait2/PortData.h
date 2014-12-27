@@ -12,6 +12,7 @@
 @interface PortData : NSObject
 
 @property (nonatomic) NSMutableDictionary *ports;
+@property (nonatomic) NSMutableDictionary *colors;
 
 - (NSArray*) getPortNames;
 - (NSArray*) getPortDetail: (NSString*) portName;

@@ -18,6 +18,7 @@
 		9729147E1A477832001CD2B2 /* PortMapListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729147C1A477832001CD2B2 /* PortMapListViewController.m */; };
 		972914851A47A86A001CD2B2 /* BWColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 972914841A47A86A001CD2B2 /* BWColor.m */; };
 		972914881A4E7735001CD2B2 /* PortDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 972914871A4E7735001CD2B2 /* PortDetailViewController.m */; };
+		9729148B1A4EA71A001CD2B2 /* PortIconView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9729148A1A4EA71A001CD2B2 /* PortIconView.m */; };
 		977A92781A492C7F005D3341 /* DotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 977A92771A492C7F005D3341 /* DotView.m */; };
 		977A927B1A4931E1005D3341 /* BWStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 977A927A1A4931E1005D3341 /* BWStyleKit.m */; };
 		97DD64641A416EB2004E3EDC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD64631A416EB2004E3EDC /* main.m */; };
@@ -62,10 +63,12 @@
 		972914841A47A86A001CD2B2 /* BWColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWColor.m; sourceTree = "<group>"; };
 		972914861A4E7735001CD2B2 /* PortDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortDetailViewController.h; sourceTree = "<group>"; };
 		972914871A4E7735001CD2B2 /* PortDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortDetailViewController.m; sourceTree = "<group>"; };
+		972914891A4EA71A001CD2B2 /* PortIconView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortIconView.h; sourceTree = "<group>"; };
+		9729148A1A4EA71A001CD2B2 /* PortIconView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortIconView.m; sourceTree = "<group>"; };
 		977A92761A492C7F005D3341 /* DotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotView.h; sourceTree = "<group>"; };
 		977A92771A492C7F005D3341 /* DotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DotView.m; sourceTree = "<group>"; };
-		977A92791A4931E1005D3341 /* BWStyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWStyleKit.h; sourceTree = "<group>"; };
-		977A927A1A4931E1005D3341 /* BWStyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWStyleKit.m; sourceTree = "<group>"; };
+		977A92791A4931E1005D3341 /* BWStyleKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BWStyleKit.h; path = ../BWStyleKit.h; sourceTree = "<group>"; };
+		977A927A1A4931E1005D3341 /* BWStyleKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BWStyleKit.m; path = ../BWStyleKit.m; sourceTree = "<group>"; };
 		97DD645E1A416EB2004E3EDC /* Borderwait2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Borderwait2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97DD64621A416EB2004E3EDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97DD64631A416EB2004E3EDC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -125,10 +128,14 @@
 		9716DB271A47E6C7000FBB5C /* Style */ = {
 			isa = PBXGroup;
 			children = (
+				977A92791A4931E1005D3341 /* BWStyleKit.h */,
+				977A927A1A4931E1005D3341 /* BWStyleKit.m */,
 				972914831A47A86A001CD2B2 /* BWColor.h */,
 				972914841A47A86A001CD2B2 /* BWColor.m */,
 				977A92761A492C7F005D3341 /* DotView.h */,
 				977A92771A492C7F005D3341 /* DotView.m */,
+				972914891A4EA71A001CD2B2 /* PortIconView.h */,
+				9729148A1A4EA71A001CD2B2 /* PortIconView.m */,
 			);
 			name = Style;
 			sourceTree = "<group>";
@@ -167,8 +174,6 @@
 		97DD64551A416EB2004E3EDC = {
 			isa = PBXGroup;
 			children = (
-				977A92791A4931E1005D3341 /* BWStyleKit.h */,
-				977A927A1A4931E1005D3341 /* BWStyleKit.m */,
 				97DD65C61A417290004E3EDC /* Frameworks */,
 				97DD64601A416EB2004E3EDC /* Borderwait2 */,
 				97DD647D1A416EB2004E3EDC /* Borderwait2Tests */,
@@ -416,6 +421,7 @@
 				972914741A47587C001CD2B2 /* PortData.m in Sources */,
 				972914711A46D25A001CD2B2 /* PortViewCell.m in Sources */,
 				97DD64641A416EB2004E3EDC /* main.m in Sources */,
+				9729148B1A4EA71A001CD2B2 /* PortIconView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

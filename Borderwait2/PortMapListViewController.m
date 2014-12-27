@@ -12,6 +12,7 @@
 #import "BWColor.h"
 #import "BWStyleKit.h"
 #import "PortDetailViewController.h"
+#import "PortIconView.h"
 
 @implementation PortMapListViewController
 @synthesize mapView;
@@ -105,31 +106,33 @@
     cell.laneTypeLabel.text    = lane.laneType;
     
     // Open lanes label
-    if(lane.openLanesCount == 1 ) {
+    if(lane.openLanesCount == 1 )
+    {
         NSString *lanesText = [NSString stringWithFormat:@"%@ lane open", @(lane.openLanesCount).stringValue];
         cell.openLanesLabel.text = lanesText;
-    } else if(lane.openLanesCount > 1 ) {
+    }
+    else if(lane.openLanesCount > 1 )
+    {
         NSString *lanesText = [NSString stringWithFormat:@"%@ lanes open", @(lane.openLanesCount).stringValue];
         cell.openLanesLabel.text = lanesText;
-    }else {
+    }
+    else
+    {
         cell.openLanesLabel.text = @"";
         cell.currentWaitLabel.text = lane.currentWait;
         cell.averageWaitLabel.text = @"";
         cell.userReportLabel.text  = @"";
-        
         // hide titles
         cell.userReportTitle.text = @"";
         cell.averageWaitTitle.text = @"";
-        
         // change text color
         cell.currentWaitLabel.textColor = [UIColor grayColor];
         
-        
     }
-    
     
     return cell;
 }
+
 -(NSInteger) numberOfSectionsInTableView:(UITableView *)tableView
 {
     return [self.portNames count];
@@ -145,11 +148,18 @@
     NSArray *portLanes = [self.portData getPortDetail:[self.portNames objectAtIndex:section]];
     return [portLanes count];
 }
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([[segue identifier] isEqualToString:@"PortDetailSegue"])
     {
         PortDetailViewController *vc = (PortDetailViewController*)[segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        NSString *portKey = [self.portNames objectAtIndex:indexPath.section];
+        NSArray *portLanes = [self.portData getPortDetail:portKey];
+        Port *lane = [portLanes objectAtIndex:indexPath.row];
+        vc.port = lane;
     }
 }
 

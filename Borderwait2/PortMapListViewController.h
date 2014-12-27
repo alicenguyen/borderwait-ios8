@@ -17,5 +17,6 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (nonatomic) PortData *portData;
 @property (nonatomic) NSArray* portNames;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) BWColor *color;
 @end

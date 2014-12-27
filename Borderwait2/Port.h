@@ -23,6 +23,8 @@
 @property (nonatomic) double distance;
 @property (nonatomic) double openLanesCount;
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+@property (nonatomic) NSString* portInitials;
+@property (nonatomic) UIColor* color;
 
 - (id) initWithName: (NSString*) name
           portType: (NSString*) _type
@@ -34,6 +36,9 @@
        currentWait: (NSString*) _avgWait
        averageWait: (NSString*) _avgWait
       userReported: (NSString*) _userReport
-        lastUpdate: (NSString*) _lastUpdate;
+        lastUpdate: (NSString*) _lastUpdate
+              color: (UIColor*) col
+       portInitials: (NSString*) portInit;
+
 
 @end

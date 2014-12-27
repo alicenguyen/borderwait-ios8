@@ -21,6 +21,8 @@
          averageWait:(NSString*) _avgWait
       userReported: (NSString*) _usrReport
         lastUpdate: (NSString*) _update
+        color:(UIColor *)col
+        portInitials:(NSString *)portInit
         
 {
     self = [super init];
@@ -37,6 +39,8 @@
     self.userReport = _usrReport;
     self.lastUpdate = _update;
     self.coordinate = CLLocationCoordinate2DMake(self.latitude, self.longitude);
+    self.portInitials = portInit;
+    self.color = col;
     
     return self;
 }
