@@ -24,4 +24,9 @@
 @property (nonatomic) UIColor *darkBackground;
 
 @property (nonatomic) UIColor *warningRed;
+
+@property (nonatomic) UIColor *green800;
+@property (nonatomic) UIColor *orange800;
+@property (nonatomic) UIColor *red800;
+
 @end

@@ -11,7 +11,7 @@
 #import "PortData.h"
 #import "BWColor.h"
 
-@interface PortMapListViewController : UIViewController <MKMapViewDelegate, UITableViewDataSource>
+@interface PortMapListViewController : UIViewController <MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic) IBOutlet UIView *portTableContainer;
 @property (strong, nonatomic) CLLocationManager *locationManager;

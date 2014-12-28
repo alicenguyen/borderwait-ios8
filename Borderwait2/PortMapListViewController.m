@@ -13,6 +13,7 @@
 #import "BWStyleKit.h"
 #import "PortDetailViewController.h"
 #import "PortIconView.h"
+#import "PortHeaderSectionCellTableViewCell.h"
 
 @implementation PortMapListViewController
 @synthesize mapView;
@@ -81,21 +82,21 @@
     
     switch(index){
         case 0:
-            cell.currentWaitLabel.textColor = BWStyleKit.green500;
-            cell.averageWaitLabel.textColor = BWStyleKit.green500;
-            cell.userReportLabel.textColor  = BWStyleKit.green500;
+            cell.currentWaitLabel.textColor = [self.color green800];
+            cell.averageWaitLabel.textColor = [self.color green800];
+            cell.userReportLabel.textColor  = [self.color green800];
             break;
             
         case 1:
-            cell.currentWaitLabel.textColor = BWStyleKit.amber500;
-            cell.averageWaitLabel.textColor = BWStyleKit.amber500;
-            cell.userReportLabel.textColor  = BWStyleKit.amber500;
+            cell.currentWaitLabel.textColor = [self.color orange800];
+            cell.averageWaitLabel.textColor = [self.color orange800];
+            cell.userReportLabel.textColor  = [self.color orange800];
             break;
             
         case 2: 
-            cell.currentWaitLabel.textColor = BWStyleKit.red500;
-            cell.averageWaitLabel.textColor = BWStyleKit.red500;
-            cell.userReportLabel.textColor  = BWStyleKit.red500;
+            cell.currentWaitLabel.textColor = [self.color red800];
+            cell.averageWaitLabel.textColor = [self.color red800];
+            cell.userReportLabel.textColor  = [self.color red800];
             break;
             
     }
@@ -122,9 +123,6 @@
         cell.currentWaitLabel.text = lane.currentWait;
         cell.averageWaitLabel.text = @"";
         cell.userReportLabel.text  = @"";
-        // hide titles
-        cell.userReportTitle.text = @"";
-        cell.averageWaitTitle.text = @"";
         // change text color
         cell.currentWaitLabel.textColor = [UIColor grayColor];
         
@@ -137,12 +135,21 @@
 {
     return [self.portNames count];
 }
-
-- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+-(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return [self.portNames objectAtIndex:section];
+    return 40;
 }
-
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 35;
+}
+-(UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section
+{
+    PortHeaderSectionCellTableViewCell *sectionCell = [tableView dequeueReusableCellWithIdentifier:@"SectionHeaderCell"];
+    sectionCell.headerLabel.text =  [self.portNames objectAtIndex:section];
+    return sectionCell;
+    
+}
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     NSArray *portLanes = [self.portData getPortDetail:[self.portNames objectAtIndex:section]];
