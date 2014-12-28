@@ -44,7 +44,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" red="0.10980392160000001" green="0.15686274510000001" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="0.19607843137254902" green="0.24705882352941178" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="sectionIndexBackgroundColor" red="0.2156862745" green="0.2784313725" blue="0.30980392159999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell opaque="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PortCell" rowHeight="53" id="hSo-mh-DZy" customClass="PortViewCell">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -100,7 +99,7 @@
                                                         <constraint firstAttribute="width" constant="59" id="w33-eh-V6K"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="9"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
@@ -124,7 +123,7 @@
                                                         </constraint>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="9"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
@@ -147,7 +146,7 @@
                                                         </constraint>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="9"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
@@ -218,7 +217,7 @@
                                                         <constraint firstAttribute="width" constant="126" id="Dug-9m-d8h"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
@@ -232,7 +231,7 @@
                                                     </variation>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.40784313729999999" green="0.40784313729999999" blue="0.40784313729999999" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="Urc-Mb-Bs9" firstAttribute="baseline" secondItem="2iU-Fs-TxZ" secondAttribute="baseline" id="1Hk-Ej-EkC"/>
                                                 <constraint firstItem="2iU-Fs-TxZ" firstAttribute="firstBaseline" secondItem="dYO-U7-icG" secondAttribute="firstBaseline" id="1hB-ke-Dj8"/>
@@ -361,7 +360,6 @@
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.1960784314" green="0.2470588235" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="averageWaitLabel" destination="lDe-Py-rcA" id="gHy-li-WDE"/>
                                             <outlet property="averageWaitTitle" destination="Urc-Mb-Bs9" id="m0v-nm-xzd"/>
@@ -441,7 +439,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szX-4Q-OZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <customObject id="1dB-a2-FzD" customClass="BWStyleKit"/>
             </objects>
-            <point key="canvasLocation" x="1783" y="-676.5"/>
+            <point key="canvasLocation" x="1423.5" y="-726.75"/>
         </scene>
         <!--Port Detail View Controller-->
         <scene sceneID="awy-Oh-saG">
@@ -618,16 +616,6 @@
                                     </mask>
                                 </variation>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5d-kW-k8J">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
-                                </variation>
-                            </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lMJ-J2-Amg">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
@@ -897,25 +885,51 @@
                                     </mask>
                                 </variation>
                             </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A3q-8c-QWH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem id="te3-MI-oWf">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" style="plain" id="JOX-a8-HOR">
+                                            <color key="tintColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="uYh-Pt-S4b" kind="show" id="yu2-xG-QfF"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Next Port" width="20" id="j1N-6v-OP9">
+                                            <color key="tintColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                        <connections>
+                                            <outlet property="backBarButtonItem" destination="JOX-a8-HOR" id="BAg-8U-BW3"/>
+                                        </connections>
+                                    </navigationItem>
+                                </items>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                                </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="tsF-jS-ojh" id="6iT-xj-Q3s"/>
+                                </connections>
+                            </navigationBar>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="abg-cK-r0H"/>
                                 <exclude reference="vUW-Zj-HOj"/>
-                                <exclude reference="n5d-kW-k8J"/>
                                 <exclude reference="lMJ-J2-Amg"/>
+                                <exclude reference="A3q-8c-QWH"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
                             <mask key="subviews">
                                 <include reference="abg-cK-r0H"/>
                                 <include reference="vUW-Zj-HOj"/>
-                                <include reference="n5d-kW-k8J"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="lMJ-J2-Amg"/>
+                                <include reference="A3q-8c-QWH"/>
                             </mask>
                         </variation>
                     </view>
@@ -923,6 +937,8 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="laneTypeLabel" destination="hHc-cQ-Plv" id="ulQ-6v-aBA"/>
+                        <outlet property="navBar" destination="A3q-8c-QWH" id="vI7-S4-i8c"/>
+                        <outlet property="navItem" destination="te3-MI-oWf" id="Y6S-Iz-Bng"/>
                         <outlet property="portIcon" destination="anz-S9-Ag0" id="vJ1-hI-1mx"/>
                         <outlet property="portNameLabel" destination="QUQ-vX-UGj" id="PIQ-FE-HYD"/>
                         <outlet property="portTypeLabel" destination="DS5-uF-io0" id="z8V-DV-VO5"/>
@@ -931,7 +947,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKo-ks-Ezn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2541" y="-989.25"/>
+            <point key="canvasLocation" x="2340" y="-894"/>
         </scene>
         <!--Border Ports-->
         <scene sceneID="EJg-ab-fU6">

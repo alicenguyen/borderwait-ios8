@@ -18,5 +18,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *portTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *laneTypeLabel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UINavigationBar *navBar;
+@property (weak, nonatomic) IBOutlet UINavigationItem *navItem;
 
 @end

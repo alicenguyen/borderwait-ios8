@@ -19,9 +19,18 @@
 @implementation PortDetailViewController
 
 -(void)viewWillAppear:(BOOL)animated {
-    // icon
+    // Port icon
     self.portIcon.port = self.port;
+
+    // Back button
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(Back)];
+    self.navItem = backButton;
     
+}
+
+- (IBAction)Back
+{
+    [self dismissViewControllerAnimated:YES completion:nil]; // ios 6
 }
 
 - (void)viewDidLoad {
@@ -32,6 +41,7 @@
     
     self.color = [[BWColor alloc] init];
     self.sections = [[NSArray alloc] initWithObjects:@"CBP Border Wait Times", @"User iReports", @"Traffic Forecast", nil ];
+    
     
 }
 
