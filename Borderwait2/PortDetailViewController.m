@@ -48,21 +48,23 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if(section == 1) {
-        return 2;
+    if(section == 0) {
+        return 1;
     }
-    return 1;
+    return 2;
 }
 
 -(CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     CGFloat height;
-    if(indexPath.section == 0) {
+    if(indexPath.section == 0 ) {
         height = 80;
-    } else {
+    } else if (indexPath.section == 2){
+        height = 160;
+    }else {
         height = 65;
     }
-        
+    
     return height;
 }
 -(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
@@ -72,6 +74,7 @@
 -(UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section
 {
     // 1. Dequeue the custom header cell
+    if (section < 2) {
     PortHeaderSectionCellTableViewCell *sectionCell = [tableView dequeueReusableCellWithIdentifier:@"SectionHeaderCell"];
     
     sectionCell.headerLabel.text = [self.sections objectAtIndex:section];
@@ -86,23 +89,23 @@
     updateLabel.backgroundColor = [UIColor clearColor];
     updateLabel.textColor = [self.color gray300];
     updateLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-  
-    [sectionCell addSubview:updateLabel];
     
+    [sectionCell addSubview:updateLabel];
+   
+    // User iReports section
     if (section == 1) {
         // Submit iReport button
         CGFloat yCenter = sectionCell.bounds.size.height / 2 + 20;
-        
         UIButton *submitReportBtn = [UIButton buttonWithType:UIButtonTypeContactAdd];
         [submitReportBtn sizeToFit];
         submitReportBtn.center =CGPointMake(350, yCenter);
-         //[[UIButton alloc ]initWithFrame:CGRectMake(xPos, 17, 70, 20)];
-        
-//        submitReportBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
-        
         [sectionCell addSubview:submitReportBtn];
-        
     }
+        return sectionCell;
+    }
+    
+    // Traffic forecast section
+    UITableViewCell *sectionCell = [tableView dequeueReusableCellWithIdentifier:@"ForecastHeaderSectionCell"];
     
     return sectionCell;
     
@@ -114,7 +117,9 @@
     UITableViewCell *cell;
     if(indexPath.section == 0) {
         cell = [tableView dequeueReusableCellWithIdentifier:@"CBPDetailCell"];
-    } else {
+    }else if (indexPath.section ==2 ) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"ForecastGraphCell"];
+    }else {
         cell = [tableView dequeueReusableCellWithIdentifier:@"UserReportDetailCell"];
     }
     
@@ -122,13 +127,13 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

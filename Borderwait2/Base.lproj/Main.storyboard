@@ -620,7 +620,7 @@
                                                                 <constraint firstAttribute="width" constant="258" id="NLW-qL-uRT"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
-                                                            <color key="textColor" red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="textColor" red="0.37254901960784315" green="0.37254901960784315" blue="0.37254901960784315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="default">
                                                                 <mask key="constraints">
@@ -766,15 +766,91 @@
                                                     </variation>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
-                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="65" id="L57-cF-wDr">
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ForecastHeaderSectionCell" rowHeight="65" id="L57-cF-wDr">
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L57-cF-wDr" id="OIl-xz-3rK">
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yxd-fT-1eW">
+                                                            <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="384" id="fA2-vd-AR5">
+                                                                    <variation key="heightClass=regular-widthClass=compact" constant="350"/>
+                                                                </constraint>
+                                                            </constraints>
+                                                            <segments>
+                                                                <segment title="Hourly"/>
+                                                                <segment title="Daily"/>
+                                                                <segment title="Weekly"/>
+                                                            </segments>
+                                                            <color key="tintColor" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <variation key="default">
+                                                                <mask key="constraints">
+                                                                    <exclude reference="fA2-vd-AR5"/>
+                                                                </mask>
+                                                            </variation>
+                                                            <variation key="heightClass=regular-widthClass=compact">
+                                                                <mask key="constraints">
+                                                                    <include reference="fA2-vd-AR5"/>
+                                                                </mask>
+                                                            </variation>
+                                                        </segmentedControl>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Yxd-fT-1eW" firstAttribute="centerY" secondItem="OIl-xz-3rK" secondAttribute="centerY" id="idi-SD-uMB"/>
+                                                        <constraint firstItem="Yxd-fT-1eW" firstAttribute="centerX" secondItem="OIl-xz-3rK" secondAttribute="centerX" id="oaX-7f-npk">
+                                                            <variation key="heightClass=regular-widthClass=compact" constant="-17"/>
+                                                        </constraint>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="subviews">
+                                                            <exclude reference="Yxd-fT-1eW"/>
+                                                        </mask>
+                                                        <mask key="constraints">
+                                                            <exclude reference="idi-SD-uMB"/>
+                                                            <exclude reference="oaX-7f-npk"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="subviews">
+                                                            <include reference="Yxd-fT-1eW"/>
+                                                        </mask>
+                                                        <mask key="constraints">
+                                                            <include reference="idi-SD-uMB"/>
+                                                            <include reference="oaX-7f-npk"/>
+                                                        </mask>
+                                                    </variation>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ForecastGraphCell" rowHeight="300" id="PiE-EN-3T0">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PiE-EN-3T0" id="7GO-Vl-9FP">
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LineGraphSample" translatesAutoresizingMaskIntoConstraints="NO" id="rrV-Od-neU">
+                                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="0.0" y="0.0" width="400" height="161"/>
+                                                            </variation>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <variation key="default">
+                                                        <mask key="subviews">
+                                                            <exclude reference="rrV-Od-neU"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                        <mask key="subviews">
+                                                            <include reference="rrV-Od-neU"/>
+                                                        </mask>
+                                                    </variation>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="440"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="442"/>
                                         </variation>
                                         <connections>
                                             <outlet property="dataSource" destination="tsF-jS-ojh" id="Xqi-jw-Ru1"/>
@@ -789,7 +865,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="316" width="400" height="432"/>
+                                    <rect key="frame" x="0.0" y="316" width="400" height="500"/>
                                     <mask key="subviews">
                                         <include reference="uSB-vf-jh7"/>
                                     </mask>
@@ -829,7 +905,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BKo-ks-Ezn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2541" y="-987"/>
+            <point key="canvasLocation" x="2541" y="-989.25"/>
         </scene>
         <!--Border Ports-->
         <scene sceneID="EJg-ab-fU6">
@@ -872,6 +948,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="LineGraphSample" width="397" height="297"/>
         <image name="gps-needle" width="25" height="25"/>
     </resources>
 </document>
