@@ -31,7 +31,7 @@
     self.laneTypeLabel.text = self.port.laneType;
     
     self.color = [[BWColor alloc] init];
-    self.sections = [[NSArray alloc] initWithObjects:@"CBP Border Wait Times", @"User iReports", @"Overview", nil ];
+    self.sections = [[NSArray alloc] initWithObjects:@"CBP Border Wait Times", @"User iReports", @"Traffic Forecast", nil ];
     
 }
 
@@ -48,11 +48,26 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 3;
+    if(section == 1) {
+        return 2;
+    }
+    return 1;
+}
+
+-(CGFloat)tableView:(UITableView*)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGFloat height;
+    if(indexPath.section == 0) {
+        height = 80;
+    } else {
+        height = 65;
+    }
+        
+    return height;
 }
 -(CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section
 {
-    return 45;
+    return 40;
 }
 -(UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section
 {
@@ -66,14 +81,28 @@
     
     // 3. Programmically create time updates label
     CGFloat xPos = sectionCell.headerLabel.frame.size.width + sectionCell.headerLabel.frame.origin.x + 10;
-    CGFloat yPos = 15+2;
-    UILabel *updateLabel = [[UILabel alloc] initWithFrame:CGRectMake(xPos, yPos, 132, 20)];
+    UILabel *updateLabel = [[UILabel alloc] initWithFrame:CGRectMake(xPos, 13, 132, 20)];
     updateLabel.text = @" @3:00 pm PST";
     updateLabel.backgroundColor = [UIColor clearColor];
     updateLabel.textColor = [self.color gray300];
     updateLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:12];
-   
+  
     [sectionCell addSubview:updateLabel];
+    
+    if (section == 1) {
+        // Submit iReport button
+        CGFloat yCenter = sectionCell.bounds.size.height / 2 + 20;
+        
+        UIButton *submitReportBtn = [UIButton buttonWithType:UIButtonTypeContactAdd];
+        [submitReportBtn sizeToFit];
+        submitReportBtn.center =CGPointMake(350, yCenter);
+         //[[UIButton alloc ]initWithFrame:CGRectMake(xPos, 17, 70, 20)];
+        
+//        submitReportBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
+        
+        [sectionCell addSubview:submitReportBtn];
+        
+    }
     
     return sectionCell;
     
@@ -82,7 +111,12 @@
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PortDetailCell"];
+    UITableViewCell *cell;
+    if(indexPath.section == 0) {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"CBPDetailCell"];
+    } else {
+        cell = [tableView dequeueReusableCellWithIdentifier:@"UserReportDetailCell"];
+    }
     
     return cell;
 }
