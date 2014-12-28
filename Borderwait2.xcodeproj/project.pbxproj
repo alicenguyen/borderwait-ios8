@@ -37,6 +37,7 @@
 		97DD65C31A417214004E3EDC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65B81A417214004E3EDC /* OpenGLES.framework */; };
 		97DD65C41A417214004E3EDC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65B91A417214004E3EDC /* QuartzCore.framework */; };
 		97DD65C51A417214004E3EDC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DD65BA1A417214004E3EDC /* SystemConfiguration.framework */; };
+		97E1FA3C1A4F78E60081B416 /* PortHeaderSectionCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E1FA3B1A4F78E60081B416 /* PortHeaderSectionCellTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,8 @@
 		97DD65B81A417214004E3EDC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		97DD65B91A417214004E3EDC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		97DD65BA1A417214004E3EDC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		97E1FA3A1A4F78E60081B416 /* PortHeaderSectionCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PortHeaderSectionCellTableViewCell.h; sourceTree = "<group>"; };
+		97E1FA3B1A4F78E60081B416 /* PortHeaderSectionCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PortHeaderSectionCellTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 				972914701A46D25A001CD2B2 /* PortViewCell.m */,
 				972914861A4E7735001CD2B2 /* PortDetailViewController.h */,
 				972914871A4E7735001CD2B2 /* PortDetailViewController.m */,
+				97E1FA3A1A4F78E60081B416 /* PortHeaderSectionCellTableViewCell.h */,
+				97E1FA3B1A4F78E60081B416 /* PortHeaderSectionCellTableViewCell.m */,
 			);
 			name = "Port Maps";
 			sourceTree = "<group>";
@@ -416,6 +421,7 @@
 				972914881A4E7735001CD2B2 /* PortDetailViewController.m in Sources */,
 				97DD64671A416EB2004E3EDC /* AppDelegate.m in Sources */,
 				9729147E1A477832001CD2B2 /* PortMapListViewController.m in Sources */,
+				97E1FA3C1A4F78E60081B416 /* PortHeaderSectionCellTableViewCell.m in Sources */,
 				977A927B1A4931E1005D3341 /* BWStyleKit.m in Sources */,
 				972914851A47A86A001CD2B2 /* BWColor.m in Sources */,
 				972914741A47587C001CD2B2 /* PortData.m in Sources */,

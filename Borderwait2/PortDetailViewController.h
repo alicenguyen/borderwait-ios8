@@ -11,11 +11,12 @@
 #import "PortMapListViewController.h"
 #import "Port.h"
 
-@interface PortDetailViewController : UIViewController
+@interface PortDetailViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property ( nonatomic) IBOutlet PortIconView *portIcon;
 @property (weak, nonatomic) Port *port;
 @property (weak, nonatomic) IBOutlet UILabel *portNameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *portTypeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *laneTypeLabel;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
