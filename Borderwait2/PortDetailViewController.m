@@ -25,7 +25,6 @@
     // Back button
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(Back)];
     self.navItem = backButton;
-    
 }
 
 - (IBAction)Back
@@ -42,6 +41,8 @@
     self.color = [[BWColor alloc] init];
     self.sections = [[NSArray alloc] initWithObjects:@"CBP Border Wait Times", @"User iReports", @"Traffic Forecast", nil ];
     
+//    CGRect frame = self.toobar.frame;
+//    [self.toobar setFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height + 20)];
     
 }
 
@@ -70,7 +71,7 @@
     if(indexPath.section == 0 ) {
         height = 80;
     } else if (indexPath.section == 2){
-        height = 160;
+        height = 100;
     }else {
         height = 65;
     }
